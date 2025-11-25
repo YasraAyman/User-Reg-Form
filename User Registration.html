@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body class="reg-page ">
+    <div class="container">
+       <a href="list.html">View all users →</a>
+      <h2>User Registration</h2>
+      <form id="userForm">
+        <div class="field">
+          <label for="fullName">Full Name</label>
+          <input id="fullName" name="fullName" type="text" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="field">
+          <label for="email">DOB</label>
+          <input id="Number" name="Number" type="date" required />
+        </div>
+        <div class="field">
+        <label for="Gender">Gender</label>
+        <input id="Gender" name="Gender" type="text" required />
+      </div>
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" />
+        </div>
+
+        <div class="field">
+          <label for="address">Address</label>
+          <textarea id="address" name="address"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="role">Role (optional)</label>
+          <input
+            id="role"
+            name="role"
+            type="text"
+            placeholder="e.g. Student, Admin"
+          />
+        </div>
+
+        <button type="submit">Register User</button>
+        <div id="msg" class="message"></div>
+      </form>
+    </div>
+  </body>
+ <script src="Reg Form.js"></script>
+</html>

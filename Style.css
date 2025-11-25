@@ -1,0 +1,239 @@
+/* ========== GLOBAL RESET ========== */
+*.reg-page  {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ========== PAGE 1 (Registration Page) ========== */
+body.reg-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dafac5;
+  padding: 20px;
+}
+
+.container {
+  background: #ffffff;
+  padding: 24px 28px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 18px;
+  color: #111827;
+}
+
+.field {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #374151;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 9px 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s, background-color 0.15s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2563eb;
+  background-color: rgba(164, 209, 149, 0.40);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+a {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+button:hover {
+  background: #edd79d;
+}
+
+/* Messages */
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.message.success {
+  color: #16a34a;
+}
+
+.message.error {
+  color: #dc2626;
+}
+
+/* ========================================================= */
+/* ========== PAGE 2 (User List Page) ========== */
+/* ========================================================= */
+
+body.list-page {
+  background: #f3f4f6;
+  padding: 30px;
+  font-family: Arial, sans-serif; 
+}
+a .list-page {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 12px;
+ 
+}
+table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+th {
+  background: fuchsia;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f0f4ff;
+}
+
+/* Action buttons inside table */
+.btn-update,
+.btn-delete {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-update {
+  background-color: #fbbf24;
+}
+
+.btn-update:hover {
+  background-color: #d29e1c;
+}
+
+.btn-delete {
+  background-color: #ef4444;
+}
+
+.btn-delete:hover {
+  background-color: #b91c1c;
+}
+
+/* ========== Update Popup ========== */
+#updatePopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  max-width: 90%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px 30px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+#updatePopup label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+#updatePopup input,
+#updatePopup textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#updatePopup textarea {
+  resize: vertical;
+  min-height: 50px;
+}
+
+#updatePopup button {
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px;
+  background-color: #2563eb;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#updatePopup .closeBtn {
+  background-color: #ef4444;
+  margin-top: 10px;
+}
+
+/* Overlay */
+#overlay {
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4);
+  display: none;
+  z-index: 999;
+}
