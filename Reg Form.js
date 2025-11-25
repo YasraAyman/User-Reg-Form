@@ -1,5 +1,5 @@
 // Ensure your backend server is running on port 5000: node server.js
-const API_URL = 'http://localhost:5000/api/users'; 
+const API_URL = ' https://user-reg-form-backend.onrender.com/api/users'; 
 
 // --- 1. USER REGISTRATION LOGIC (For the Registration HTML Page) ---
 
@@ -166,4 +166,5 @@ if (updateForm) {
 // This runs fetchUsers() only on the page where the userTableBody element exists.
 if (userTableBody) {
     fetchUsers();
+
 }
