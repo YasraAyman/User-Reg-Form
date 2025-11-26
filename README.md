@@ -58,3 +58,7 @@ Backend**
 | list.html                 | Frontend: The user list/dashboard page with Read, Update, and Delete functionality.                |
 | Reg Form.js               | Client Script: Contains all JavaScript logic for form submission and making CRUD API calls.        |
 | Style.css                 | Styling: Provides custom styles for the registration and list pages.                               |
+
+**Backend DB Screenshot**
+<img width="1810" height="892" alt="Backend DB  png" src="https://github.com/user-attachments/assets/fea468ca-7779-4c6e-9f74-c9f1da55a3c9" />
+
